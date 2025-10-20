@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Блог</title>
+  <link rel="icon" href="../images/favicon.png">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container bar">
+      <a class="logo" href="../index.html" aria-label="Головна">
+        <img src="../images/logo.svg" alt="Logo">
+      </a>
+      <nav class="nav" aria-label="Головне меню">
+        <a href="../catalog/index.html">Каталог</a>
+        <a href="../brands/index.html">Бренди</a>
+        <a class="active" href="index.html">Блог</a>
+        <a href="../contact.html">Контакти</a>
+      </nav>
+      <div class="search-lang">
+        <form class="search" action="../catalog/index.html" method="get" role="search">
+          <input name="vin" type="search" placeholder="Пошук за VIN" aria-label="Пошук за VIN">
+        </form>
+        <select class="select" aria-label="Вибір мови">
+          <option value="uk" selected>Українська</option>
+          <option value="en">English</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="page-title">Блог</h1>
+    <section aria-label="Список статей">
+      <div class="grid">
+        <a class="card" href="sample-article.html">
+          <img class="thumb" src="../images/resource/blog-1.jpg" alt="Як перевірити VIN перед покупкою">
+          <div class="content">
+            <div class="title">Як перевірити VIN перед покупкою</div>
+            <div class="meta">20.04.2023</div>
+          </div>
+        </a>
+        <a class="card" href="sample-article.html">
+          <img class="thumb" src="../images/resource/blog-2.jpg" alt="ТОП‑5 надійних моделей">
+          <div class="content">
+            <div class="title">ТОП‑5 надійних моделей</div>
+            <div class="meta">20.04.2023</div>
+          </div>
+        </a>
+        <a class="card" href="sample-article.html">
+          <img class="thumb" src="../images/resource/blog-3.jpg" alt="Як заощадити на страхуванні авто">
+          <div class="content">
+            <div class="title">Як заощадити на страхуванні авто</div>
+            <div class="meta">20.04.2023</div>
+          </div>
+        </a>
+      </div>
+
+      <nav class="pagination" aria-label="Пагінація">
+        <a href="#">Попередня</a>
+        <span class="current">1</span>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">Наступна</a>
+      </nav>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container row">
+      <div class="muted">© 2025</div>
+      <nav class="links" aria-label="Футер меню">
+        <a href="../terms.html">Правила сайту</a>
+        <a href="../contact.html">Контакти</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
