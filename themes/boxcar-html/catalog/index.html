@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Каталог</title>
+  <link rel="icon" href="../images/favicon.png">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container bar">
+      <a class="logo" href="../index.html" aria-label="Головна">
+        <img src="../images/logo.svg" alt="Logo">
+      </a>
+      <nav class="nav" aria-label="Головне меню">
+        <a class="active" href="index.html">Каталог</a>
+        <a href="../brands/index.html">Бренди</a>
+        <a href="../blog/index.html">Блог</a>
+        <a href="../contact.html">Контакти</a>
+      </nav>
+      <div class="search-lang">
+        <form class="search" action="index.html" method="get" role="search">
+          <input name="vin" type="search" placeholder="Пошук за VIN" aria-label="Пошук за VIN">
+        </form>
+        <select class="select" aria-label="Вибір мови">
+          <option value="uk" selected>Українська</option>
+          <option value="en">English</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="page-title">Каталог</h1>
+
+    <section class="filters" aria-label="Фільтри">
+      <form>
+        <select class="select" name="brand" aria-label="Марка">
+          <option value="">Марка</option>
+          <option>Audi</option>
+          <option>BMW</option>
+          <option>Ford</option>
+          <option>Honda</option>
+          <option>Mercedes-Benz</option>
+          <option>Toyota</option>
+        </select>
+        <input class="input" name="model" placeholder="Модель" aria-label="Модель">
+        <input class="input" name="year_min" type="number" placeholder="Рік від" aria-label="Рік від">
+        <input class="input" name="year_max" type="number" placeholder="Рік до" aria-label="Рік до">
+        <div class="actions">
+          <button class="button" type="submit">Застосувати</button>
+          <button class="button secondary" type="reset">Скинути</button>
+        </div>
+      </form>
+    </section>
+
+    <section aria-label="Оголошення">
+      <div class="grid">
+        <a class="card" href="../vehicle/sample.html">
+          <img class="thumb" src="../images/resource/blog-1.jpg" alt="BMW X5 2018">
+          <div class="content">
+            <div class="title">BMW X5 — 2018</div>
+            <div class="meta">BMW · X5 · 2018</div>
+            <div class="vin" title="Повний VIN: WBAKS0C55J0A12345">VIN: XXXXXXXXXXXX12345</div>
+          </div>
+        </a>
+        <a class="card" href="../vehicle/sample.html">
+          <img class="thumb" src="../images/resource/blog-2.jpg" alt="Audi A4 2019">
+          <div class="content">
+            <div class="title">Audi A4 — 2019</div>
+            <div class="meta">Audi · A4 · 2019</div>
+            <div class="vin" title="Повний VIN: WAUZZZ8K9KA012345">VIN: XXXXXXXXXXXX12345</div>
+          </div>
+        </a>
+        <a class="card" href="../vehicle/sample.html">
+          <img class="thumb" src="../images/resource/blog-3.jpg" alt="Toyota Camry 2017">
+          <div class="content">
+            <div class="title">Toyota Camry — 2017</div>
+            <div class="meta">Toyota · Camry · 2017</div>
+            <div class="vin" title="Повний VIN: 4T1BF1FK7HU012345">VIN: XXXXXXXXXXXX12345</div>
+          </div>
+        </a>
+        <a class="card" href="../vehicle/sample.html">
+          <img class="thumb" src="../images/resource/blog4-1.jpg" alt="Mercedes C300 2020">
+          <div class="content">
+            <div class="title">Mercedes C300 — 2020</div>
+            <div class="meta">Mercedes-Benz · C300 · 2020</div>
+            <div class="vin" title="Повний VIN: WDDWJ8DB0LF012345">VIN: XXXXXXXXXXXX12345</div>
+          </div>
+        </a>
+      </div>
+
+      <nav class="pagination" aria-label="Пагінація">
+        <a href="#">Попередня</a>
+        <span class="current">1</span>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">Наступна</a>
+      </nav>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container row">
+      <div class="muted">© 2025</div>
+      <nav class="links" aria-label="Футер меню">
+        <a href="../terms.html">Правила сайту</a>
+        <a href="../contact.html">Контакти</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
